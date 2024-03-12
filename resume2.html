@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      .outer {
+        width: 100%;
+        height: 100%;
+        background: whitesmoke;
+      }
+      .inner {
+        width: 90%;
+        /* height:640px; */
+        /* height: 100vh; */
+        /* height:650px; */
+        border: 2px solid black;
+        margin: auto;
+        background: whitesmoke;
+      }
+      .inner_one {
+        display: flex;
+        justify-content: space-between;
+        /* margin:10px; */
+        height: 260px;
+        margin: auto;
+        padding: 10px;
+        align-items: center;
+      }
+      /* name */
+      .name {
+        text-transform: uppercase;
+        font-weight: 1000;
+        color: black;
+      }
+      /* name end */
+      /* .line {
+        height: 2px;
+        width: 80%;
+        background: #000;
+        margin: auto;
+      } */
+      .inner_two {
+        width: 50%;
+        height: 100%;
+        /* text-align: center; */
+        /* display: flex; */
+      }
+      .inner_three {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        height: 560px;
+        margin-top: 2px;
+      }
+      .line2 {
+        height: 550px;
+        width: 2px;
+        background: #000;
+        /* margin: auto; */
+        margin-top: 10px;
+      }
+      h2 {
+        text-transform: uppercase;
+        background: lightblue;
+        width: 80%;
+        margin: auto;
+        padding: 2px;
+        border-radius: 3px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+      h4 {
+        text-transform: uppercase;
+        margin: 10px;
+      }
+      li {
+        margin: 10px;
+      }
+      
+    </style>
+    <!-- <script src="pdf.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> -->
+
+    <!-- <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script> -->
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner" id="printableArea">
+        <div class="inner_one">
+          <div >
+            <div style="margin-left: 60px;">
+                <img id="img-from-local-storage"  width="200px" height="200px"/>
+            </div>
+            
+            <!-- <p style="text-transform: uppercase; font-weight: bold">
+              innovative quick learner
+            </p> -->
+          
+            <!-- <p class="age"></p> -->
+          </div>
+
+          <div style="margin-right: 100px">
+            <h1 class="name"></h1>
+            <div
+              class="phone-call"
+              style="
+                display: flex;
+                align-items: center;
+                width: 100px;
+                margin: 10px;
+              "
+            >
+              
+              <i class="fa fa-phone-square" aria-hidden="true"></i>
+              <p class="number" id="number" style="margin-left: 10px"></p>
+            </div>
+
+            <div style="display: flex; width: 100px; margin: 10px">
+              <!-- <img src="assests/Screenshot (70).png" width="20px "  style="margin-right:3px;margin-top: 2px;"> -->
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <p class="email" id="email" style="margin-left: 10px"></p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                width: 100px;
+                margin: 10px;
+              "
+            >
+              <!-- <img src="assests/Screenshot (71).png" width="20px "  style="margin-right:3px;margin-top: 2px;"> -->
+              <i class="fa fa-location-arrow" aria-hidden="true"></i>
+              <p
+                class="location"
+                id="location"
+                style="margin-left: 10px; text-transform: capitalize"
+              ></p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                width: 100px;
+                margin: 10px;
+                font-size: 14px;
+              "
+            >
+              <!-- <img src="assests/Screenshot (73).png" width="20px "  style="margin-right:3px;margin-top: 2px;"> -->
+
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i class="fa fa-github" aria-hidden="true"></i>
+
+              <p id="linkedin" style="margin-left: 10px"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="main">
+          <div class="inner_two">
+            <h2>education</h2>
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <h4>graducation -</h4>
+              <p id="graducation" style="text-transform: uppercase"></p>
+            </div>
+
+            <p
+              id="collage"
+              style="
+                text-transform: uppercase;
+                margin: auto;
+                width: 300px;
+                font-size: 14px;
+              "
+            ></p>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <h4>Matriculation -</h4>
+              <p id="Matriculation" style="text-transform: uppercase"></p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <h4>Senior Secondary-</h4>
+              <p id="srsec" style="text-transform: uppercase"></p>
+            </div>
+
+            <h2>certification</h2>
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <h4 id="certificate" style="text-transform: uppercase"></h4>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <h4 id="certificate2" style="text-transform: uppercase"></h4>
+            </div>
+
+            <h2>skills</h2>
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+              "
+            >
+              <ul>
+                <li>
+                  <p id="skill1" style="text-transform: uppercase"></p>
+                </li>
+                <li><p id="skill2" style="text-transform: uppercase"></p></li>
+                <li><p id="skill3" style="text-transform: uppercase"></p></li>
+                <li><p id="skill4" style="text-transform: uppercase"></p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="line2"></div>
+
+          <div class="inner_three">
+            <h2 style="text-transform: uppercase">experince</h2>
+            <h4 id="post"></h4>
+            <p
+              id="company_name"
+              style="text-transform: uppercase; margin-bottom: 3px"
+            ></p>
+            <div style="display: flex; justify-content: space-evenly">
+              <p id="experince_years" style="font-weight: bold"></p>
+              <p id="location_name" style="font-weight: bold"></p>
+            </div>
+            <div>
+              <p
+                id="work"
+                style="
+                  font-size: 16px;
+                  width: 270px;
+                  margin: auto;
+                  margin-bottom: 5px;
+                  margin-top: 10px;
+                  text-align: start;
+                  text-transform: capitalize;
+                "
+              ></p>
+            </div>
+            <h2>projects</h2>
+            <h4 id="project_one_heading"></h4>
+
+            <p
+              id="project_one_details"
+              style="
+                font-size: 16px;
+                width: 270px;
+                margin: auto;
+                margin-bottom: 5px;
+                text-align: start;
+                text-transform: capitalize;
+              "
+            ></p>
+
+            <h4 id="project_second_heading" style="margin-top: 10px"></h4>
+
+            <p
+              id="project_second_details"
+              style="
+                font-size: 16px;
+                width: 270px;
+                margin: auto;
+                margin-bottom: 5px;
+                text-align: start;
+                text-transform: capitalize;
+              "
+            ></p>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="mybutton"
+      style="
+        background: black;
+        color: white;
+        text-align: center;
+        width: 40px;
+        margin: auto;
+        text-decoration: none;
+        margin-top: 10px;
+      "
+    >
+      <a
+        href="javascript:void(0);"
+        onclick="printfun()"
+        id="mybutton"
+        style="text-decoration: none; color: white">Print
+    </a>
+    </div>
+    
+
+
+<script type="text/javascript">
+      const json = localStorage.getItem("form");
+      var obj = JSON.parse(json);
+    
+
+      let key = Object.keys(obj);
+     
+      let values = Object.values(obj);
+    
+      document.querySelector(".name").innerHTML = obj.name;
+      document.querySelector(".number").innerHTML = values[1];
+      document.getElementById("email").innerHTML = values[2];
+      document.querySelector(".location").innerHTML = values[3];
+      // document.querySelector(".age").innerHTML="Age="+values[4] +"years"
+      document.getElementById("linkedin").innerHTML = values[4];
+      document.getElementById("graducation").innerHTML = values[5];
+      document.getElementById("collage").innerHTML = values[6];
+      document.getElementById("Matriculation").innerHTML = values[7];
+      document.getElementById("srsec").innerHTML = values[8];
+      document.getElementById("certificate").innerHTML = values[9];
+      document.getElementById("certificate2").innerHTML = values[10];
+      document.getElementById("skill1").innerHTML = values[11];
+      document.getElementById("skill2").innerHTML = values[12];
+      document.getElementById("skill3").innerHTML = values[13];
+      document.getElementById("skill4").innerHTML = values[14];
+      document.getElementById("post").innerHTML = values[15];
+      document.getElementById("company_name").innerHTML = values[16];
+      document.getElementById("experince_years").innerHTML =
+        values[17] + "year";
+      document.getElementById("location_name").innerHTML = values[18];
+      document.getElementById("work").innerHTML = values[19];
+      document.getElementById("project_one_heading").innerHTML = values[20];
+      document.getElementById("project_one_details").innerHTML =
+        "*" + " " + values[21];
+      document.getElementById("project_second_heading").innerHTML = values[22];
+      document.getElementById("project_second_details").innerHTML =
+        "*" + " " + values[23];
+    //   document.getElementById("photo").innerHTML=values[24]
+    //   console.log(obj.photo)
+</script>
+
+<script>
+//  Take the image from localStorage and display it
+const newImage = document.getElementById('img-from-local-storage',);
+newImage.src = localStorage.getItem('image');
+</script>
+
+<script>
+    function printfun(){
+        document.getElementById("mybutton").innerHTML=""
+        window.print()
+    }
+</script>
+
+  </body>
+</html>

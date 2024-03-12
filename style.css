@@ -1,0 +1,85 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+.outer{
+    width:100vw;
+    height:100vh;
+    /* background:  linear-gradient(to top left,#3ed8ff,#3c4345); */
+    background-image: linear-gradient(rgba(7, 9, 17, 0.7),rgba(71, 96, 96, 0.7)),url(assests/banner.png);
+    background-size: cover;
+    
+  
+}
+.inner{
+    width:400px;
+    position: relative;
+    margin:0 auto;
+    top:40%;
+    padding:20px 40px;
+    background: linear-gradient(to top right,#ffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 5px #2773a5;
+    z-index: 1;
+};
+.sign-up-header p{
+    font-size: 0.95rem;
+    color:#555;
+    margin-top:5px ;
+}
+.sign-up-header h1{
+    color:#2773a5;
+    text-align: center;
+}
+.sign-up-body{
+    margin:20x 0;
+
+}
+.sign-up-body p{
+    margin:10px 0 ;
+
+}
+.sign-up-body p label{
+    display: block;
+    font-weight:bold;
+}
+.sign-up-body input{
+    width:100%;
+    padding:10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size:1rem;
+    margin:4px
+}
+.sign-up-body p input[type="submit"]{
+	background-color:#3498ab ;
+	border:none;
+	color:white;
+	cursor:pointer;
+
+}
+.sign-up-body p input[type="submit"]:hover{
+	background-color:#2773a5;
+}
+.sign-up-footer p{
+	color:#555;
+	text-align:center;
+}
+.circle{
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	background:linear-gradient(to top right,#ffffff33,#ffffffff);
+	position:absolute;
+}
+.c1{
+    top:100px;
+    left:30%
+}
+.c2{
+    bottom:200px;
+    right:30%
+}

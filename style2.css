@@ -1,0 +1,303 @@
+
+*{
+     margin:0%;
+     padding:0%;
+     box-sizing: border-box;
+}
+.outer{
+     width:100%;
+     height:100%;
+     /* background:  linear-gradient(to top left,#3ed8ff,#72aeb7); */
+     background-image: linear-gradient(rgba(7, 9, 17, 0.7),rgba(71, 96, 96, 0.7)),url(assests/banner.png);
+     color:white;
+     
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 10px;
+    margin-left: 20px; */
+    background:rgb(40, 40, 43);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.logo{
+    font-style: italic; 
+    text-shadow: 5px 2px 3px rgb(4, 4, 96);
+    color: whitesmoke;
+}
+.one{
+    display: flex;
+    gap: 20px;
+}
+.one a{
+    text-decoration: none;
+
+}
+.one a p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.one a p:hover{
+    color:wheat;
+    transition: 0.5s;
+}
+
+.main_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.three img{
+    margin:30px;
+    width:500px;
+    height:500px;
+    padding:30px;
+}
+.two{
+    margin:40px;
+}
+button{
+    color:black;
+    background: wheat;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover{
+    color:wheat;
+    background: rgb(40, 40, 43);
+    transition: 0.5s;
+}
+footer{
+    background: rgb(40, 40, 43);
+    color:white
+}
+.l1 img{
+    width:100px;
+    height:100px;
+    padding:10px;
+}
+.lmn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px
+}
+.on2 ul{
+    display: flex;
+    
+}
+.on2 ul li{
+    list-style: none;
+    margin:2px;
+}
+.on2 ul li img{
+    width:20px;
+    height:20px;
+}
+.l2 p{
+    text-transform: capitalize;
+}
+.lm9 p{
+    padding:30px;
+}
+main{
+    width:80%;
+    margin: auto;
+}
+
+
+/* global compus start here */
+.main_one{
+    width:80%;
+    margin: auto;
+    text-align: center;
+   
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.campuscol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+
+}
+.campuscol img{
+   width:100%;
+   display: block;   
+}
+.layer{
+   background:transparent ;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top:0%;
+   left: 0%;
+   transition: 1s;
+}
+.layer:hover{
+  background:rgba(178, 152, 235, 0.7) ;
+}
+.layer h3{
+ color:white;
+ position:absolute;
+ bottom: 0;
+ left:50%;
+ transform:translate(-50%);
+ font-weight: 500;
+ font-size: 26px;
+ opacity: 0;
+ transition: 0.5s;
+
+}
+.layer:hover h3{
+ bottom: 49%;
+ opacity: 1;
+}
+.main_one h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main_one p{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;;
+}
+
+/* courses start here */
+.course{
+width:80%;
+margin: auto;
+text-align: center;
+/* padding-top:100px; */
+
+}
+h1{
+font-size: 36px;
+font-weight: 600;
+text-transform: uppercase;
+
+}
+p{
+/* color:#777; */
+font-weight: 400;
+/* font-size:14px; */
+line-height:30px;
+padding: 10px;
+
+}
+.row{
+margin-top:5%;
+display: flex;
+justify-content: space-between;
+}
+.course-col{
+flex-basis: 31%;
+background: #6976a7;
+border-radius: 10px;
+margin-bottom: 5%;
+padding:20px 12px;
+box-sizing: border-box;
+transition: 1s;
+cursor: pointer;
+}
+h3{
+font-size: 22px;
+font-weight: 600;
+text-transform: uppercase;
+
+}
+.course-col:hover{
+background: lightskyblue;
+
+
+}
+
+/* course end here */
+
+/* contact page */
+.location{
+    width:80%;
+    margin:auto;
+    padding:80px 0;
+
+    
+}
+.location iframe{
+    width:100%;
+
+}
+.contactus{
+    width:80%;
+    margin: auto;
+
+}
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.form{
+    display: flex; 
+     
+    justify-content: space-between;
+}
+table{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+     /* justify-content: space-between; */
+}
+table tr{
+    display: flex;
+    flex-direction: column;
+     /* align-items: center;  */
+    /* justify-content: space-between;
+    margin:20px; */
+    
+}
+table tr th{
+    margin:13px;
+    text-align: start;
+    
+}
+
+table tr td{
+    margin:10px;
+    
+}
+table tr td input{
+    width:250px;
+    height:30px
+}
+
+table tr td textarea{
+    width:250px;
+}
+.nm input{
+    color:whitesmoke;
+    background:  rgb(40, 40, 43);
+    width:100px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.nm input:hover{
+    color: rgb(40, 40, 43);
+    background: whitesmoke;
+    transition: 0.5s;
+
+}
+
+
